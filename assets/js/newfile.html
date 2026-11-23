@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new file</title>
+</head>
+<body>
+    <h1>welcome to bitebox</h1>
+    <br>
+    <label for="food">enter food name</label>
+    <input type="text" id="food">
+    <br>
+    <button onclick="add()">add</button>
+    
+    <br>
+    <br>
+    <button onclick="show()"> show add item</button>
+    <p id="show"></p>
+    <script>
+        let foodname="";
+        function add(){
+             foodname=document.getElementById("food").value;
+            
+
+        }
+        function show() {
+             document.getElementById("show").textContent = foodname;
+            
+        }
+    </script>
+</body>
+</html>
